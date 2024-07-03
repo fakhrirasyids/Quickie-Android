@@ -1,4 +1,11 @@
 dependencies {
+    // Base Resources
+    implementation(project(":baseResource"))
+
+    // Navigation Compose
+    implementation(libs.androidx.navigation.compose)
+    androidTestImplementation(libs.androidx.navigation.testing)
+
     // Koin
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.core)
