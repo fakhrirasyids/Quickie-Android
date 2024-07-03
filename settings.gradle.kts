@@ -22,3 +22,5 @@ dependencyResolutionManagement {
 rootProject.name = "Quickie"
 include(":app")
 include(":core")
+include(":platform")
+include(":baseResource")
