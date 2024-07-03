@@ -21,6 +21,7 @@ class Quickie : Application() {
                 repositoryModules,
                 useCaseModules
             )
+            val a = "a"
         }
     }
 }
