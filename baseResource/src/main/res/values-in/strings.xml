@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quickie</string>
+
+    <!-- Home Utilities -->
+    <string name="home_marquee_slides_one">Selami kesenangan tak terbatas dengan minigame yang tak terhitung jumlahnya</string>
+    <string name="home_marquee_slides_two">Satu game, petualangan minigame tak terbatas</string>
+    <string name="home_marquee_slides_three">Buka kunci kegembiraan dengan setiap minigame</string>
+    <string name="home_marquee_slides_four">Jelajahi dunia minigame, semuanya dalam satu</string>
+    <string name="home_marquee_slides_five">Tantang diri Anda dengan minigame yang menarik</string>
+
+    <!-- Settings Utilities -->
+    <string name="settings_title">Pengaturan</string>
+    <string name="settings_dialog_save">Simpan</string>
+    <string name="settings_dialog_cancel">Batal</string>
+    <string name="settings_language_title">Bahasa</string>
+
+</resources>

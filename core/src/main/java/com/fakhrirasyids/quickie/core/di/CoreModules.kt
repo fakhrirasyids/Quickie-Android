@@ -43,7 +43,12 @@ val databaseModules = module {
 }
 
 val dataSourceModules = module {
-    factory<LocalDataSource> { LocalDataSourceImpl(get<LeaderboardDao>(), get<QuickiePreferences>()) }
+    factory<LocalDataSource> {
+        LocalDataSourceImpl(
+            get<LeaderboardDao>(),
+            get<QuickiePreferences>()
+        )
+    }
 }
 
 val repositoryModules = module {

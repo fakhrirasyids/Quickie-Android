@@ -9,15 +9,19 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.fakhrirasyids.quickie.platform.di.viewModelModules
 import com.fakhrirasyids.quickie.platform.ui.navigation.Screen
 import com.fakhrirasyids.quickie.platform.ui.screens.home.HomeScreen
 import com.fakhrirasyids.quickie.platform.ui.screens.splash.SplashScreen
+import org.koin.core.context.loadKoinModules
 
 @Composable
 fun QuickieApp(
     modifier: Modifier = Modifier,
     navController: NavHostController = rememberNavController(),
 ) {
+    loadKoinModules(viewModelModules)
+
     Scaffold(
         modifier = modifier
     ) { innerPadding ->

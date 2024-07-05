@@ -1,6 +1,7 @@
 dependencies {
     // Base Resources
     implementation(project(":baseResource"))
+    implementation(project(":common"))
 
     // Navigation Compose
     implementation(libs.androidx.navigation.compose)
@@ -10,6 +11,14 @@ dependencies {
     implementation(platform(libs.koin.bom))
     implementation(libs.koin.core)
     implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
+
+    // Coroutines
+    implementation libs.kotlinx.coroutines.core
+    implementation libs.kotlinx.coroutines.android
+
+    // Lottie
+    implementation(libs.lottie.compose)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
