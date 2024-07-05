@@ -5,8 +5,6 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -18,6 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -25,6 +24,7 @@ import kotlinx.coroutines.delay
 
 @Composable
 fun SplashScreen(
+    modifier: Modifier = Modifier,
     navigateToHome: () -> Unit
 ) {
     var startAnimation by remember {
@@ -33,31 +33,37 @@ fun SplashScreen(
 
     val alphaAnimation = animateFloatAsState(
         targetValue = if (startAnimation) 1F else 0F,
-        animationSpec = tween(durationMillis = 1300), label = ""
+        animationSpec = tween(durationMillis = 300), label = "SplashScreenAlphaAnimation"
     )
 
     LaunchedEffect(key1 = true) {
+        delay(300)
         startAnimation = true
-        delay(1500)
+        delay(1700)
+        startAnimation = false
+        delay(500)
         navigateToHome()
     }
 
-    Splash(alpha = alphaAnimation.value)
+    Splash(modifier = modifier, alpha = alphaAnimation.value)
 }
 
 @Composable
-fun Splash(alpha: Float) {
+fun Splash(
+    modifier: Modifier,
+    alpha: Float
+) {
     Box(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
         Icon(
-           modifier = Modifier
-               .size(120.dp)
-               .alpha(alpha),
-            imageVector = Icons.Default.Favorite,
-            tint = Color.Blue,
+            modifier = modifier
+                .size(120.dp)
+                .alpha(alpha),
+            painter = painterResource(id = com.fakhrirasyids.quickie.baseResource.R.drawable.quickie_logo_transparent),
+            tint = Color.Unspecified,
             contentDescription = stringResource(id = com.fakhrirasyids.quickie.baseResource.R.string.app_name)
         )
     }
@@ -66,5 +72,5 @@ fun Splash(alpha: Float) {
 @Preview(showSystemUi = true, showBackground = true)
 @Composable
 fun SplashScreenPreview() {
-    Splash(alpha = 1f)
+    Splash(modifier = Modifier, alpha = 1f)
 }

@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Quickie</string>
+
+    <!-- Home Utilities-->
+    <string name="home_marquee_slides_one">Dive into endless fun with countless minigames</string>
+    <string name="home_marquee_slides_two">One game, infinite minigame adventures</string>
+    <string name="home_marquee_slides_three">Unlock joy with every minigame</string>
+    <string name="home_marquee_slides_four">Explore a world of minigames, all in one</string>
+    <string name="home_marquee_slides_five">Challenge yourself with exciting minigames</string>
+
+    <!-- Settings Utilities -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_dialog_save">Save</string>
+    <string name="settings_dialog_cancel">Cancel</string>
+    <string name="settings_language_title">Language</string>
+
 </resources>

@@ -6,5 +6,12 @@ import com.fakhrirasyids.quickie.core.data.local.room.dao.LeaderboardDao
 class LocalDataSourceImpl(
     private val leaderboardDao: LeaderboardDao,
     private val quickiePreferences: QuickiePreferences
-): LocalDataSource {
+) : LocalDataSource {
+
+    // Language
+    override suspend fun setLanguagePreferences(language: String) {
+        quickiePreferences.setLanguagePreferences(language)
+    }
+
+    override fun getLanguagePreferences() = quickiePreferences.getLanguagePreferences()
 }

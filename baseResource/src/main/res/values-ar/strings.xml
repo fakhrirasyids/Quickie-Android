@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quickie</string>
+
+    <!-- Home Utilities -->
+    <string name="home_marquee_slides_one">انغمس في متعة لا تنتهي مع عدد لا يحصى من الألعاب المصغرة</string>
+    <string name="home_marquee_slides_two">لعبة واحدة، مغامرات لا حصر لها من الألعاب المصغرة</string>
+    <string name="home_marquee_slides_three">افتح الفرح مع كل لعبة مصغرة</string>
+    <string name="home_marquee_slides_four">استكشف عالمًا من الألعاب المصغرة، كل ذلك في لعبة واحدة</string>
+    <string name="home_marquee_slides_five">تحدى نفسك بألعاب مصغرة مثيرة</string>
+
+    <!-- Settings Utilities -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_dialog_save">حفظ</string>
+    <string name="settings_dialog_cancel">إلغاء</string>
+    <string name="settings_language_title">اللغة</string>
+
+</resources>

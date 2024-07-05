@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quickie</string>
+
+    <!-- Home Utilities -->
+    <string name="home_marquee_slides_one">数え切れないほどのミニゲームで無限の楽しみに飛び込もう</string>
+    <string name="home_marquee_slides_two">1つのゲーム、無限のミニゲームアドベンチャー</string>
+    <string name="home_marquee_slides_three">すべてのミニゲームで喜びを解き放とう</string>
+    <string name="home_marquee_slides_four">ミニゲームの世界をすべて1つで探検しよう</string>
+    <string name="home_marquee_slides_five">エキサイティングなミニゲームで自分を試そう</string>
+
+    <!-- Settings Utilities -->
+    <string name="settings_title">設定</string>
+    <string name="settings_dialog_save">保存</string>
+    <string name="settings_dialog_cancel">キャンセル</string>
+    <string name="settings_language_title">言語</string>
+
+</resources>
