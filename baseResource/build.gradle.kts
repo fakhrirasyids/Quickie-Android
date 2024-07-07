@@ -12,7 +12,7 @@ android {
         minSdk = 24
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
+        consumerProguardFiles("../shared_consumer-rules.pro")
     }
     buildFeatures {
         compose = true
@@ -22,10 +22,10 @@ android {
     }
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                "../shared_proguard-rules.pro"
             )
         }
     }

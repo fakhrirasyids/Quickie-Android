@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.map
 class QuickiePreferences private constructor(private val dataStore: DataStore<Preferences>) {
 
     fun getLanguagePreferences() =
-        dataStore.data.map { it[LANGUAGE_PREFERENCES] ?: LanguageUtils.Language.CHINESE.toString() }
+        dataStore.data.map { it[LANGUAGE_PREFERENCES] ?: LanguageUtils.Language.ENGLISH.toString() }
 
     suspend fun setLanguagePreferences(language: String) {
         dataStore.edit { prefs ->
