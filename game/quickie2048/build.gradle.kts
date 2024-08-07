@@ -7,7 +7,7 @@ plugins {
 apply(from = "../../shared_dependencies.gradle")
 
 android {
-    namespace = "com.freelanxx.quickie.game.quickie2048"
+    namespace = "com.fakhrirasyids.quickie.game.quickie2048"
     compileSdk = 34
 
     defaultConfig {
