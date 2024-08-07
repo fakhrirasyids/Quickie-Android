@@ -62,7 +62,7 @@ fun Splash(
             modifier = modifier
                 .size(120.dp)
                 .alpha(alpha),
-            painter = painterResource(id = com.fakhrirasyids.quickie.baseResource.R.drawable.quickie_logo_transparent),
+            painter = painterResource(id = com.fakhrirasyids.quickie.baseResource.R.drawable.ic_quickie),
             tint = Color.Unspecified,
             contentDescription = stringResource(id = com.fakhrirasyids.quickie.baseResource.R.string.app_name)
         )

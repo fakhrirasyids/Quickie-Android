@@ -1,7 +1,10 @@
 package com.fakhrirasyids.quickie.ui
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -12,6 +15,8 @@ import com.fakhrirasyids.quickie.core.utils.LanguageUtils
 import com.fakhrirasyids.quickie.di.viewModelModules
 import com.fakhrirasyids.quickie.platform.ui.QuickieApp
 import com.fakhrirasyids.quickie.ui.theme.QuickieTheme
+import com.google.android.play.core.splitinstall.SplitInstallManagerFactory
+import com.google.android.play.core.splitinstall.SplitInstallRequest
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.koin.core.context.loadKoinModules
 import java.util.Locale
@@ -25,7 +30,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             QuickieTheme {
-                QuickieApp(modifier = Modifier.fillMaxSize())
+                QuickieApp(
+                    modifier = Modifier.fillMaxSize(),
+                )
             }
         }
 
