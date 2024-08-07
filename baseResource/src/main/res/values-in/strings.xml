@@ -15,4 +15,18 @@
     <string name="settings_dialog_cancel">Batal</string>
     <string name="settings_language_title">Bahasa</string>
 
+    <!-- GAME -->
+
+    <!-- 2048 Game-->
+    <string name="app_name_short">2048</string>
+
+    <string name="header_score">Skor</string>
+    <string name="header_best">Terbaik</string>
+
+    <string name="sub_header_new_game">Permainan baru</string>
+
+    <string name="popup_message_win">Kamu menang!</string>
+    <string name="popup_message_game_over">Permainan berakhir!</string>
+    <string name="popup_try_again">Coba lagi</string>
+
 </resources>

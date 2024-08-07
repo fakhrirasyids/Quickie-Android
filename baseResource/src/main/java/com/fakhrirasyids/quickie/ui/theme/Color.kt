@@ -21,3 +21,4 @@ val LightRed = Color(0xFFECACA7)
 
 val Blue = Color(0xFF3F51B5)
 val LightBLue = Color(0xFF2196F3)
+val SkyBlue = Color(0xFF00B7FC)

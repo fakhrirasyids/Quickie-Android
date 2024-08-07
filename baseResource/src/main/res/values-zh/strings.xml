@@ -15,4 +15,18 @@
     <string name="settings_dialog_cancel">取消</string>
     <string name="settings_language_title">语言</string>
 
+    <!-- GAME -->
+
+    <!-- 2048 Game-->
+    <string name="app_name_short">2048</string>
+
+    <string name="header_score">得分</string>
+    <string name="header_best">最佳</string>
+
+    <string name="sub_header_new_game">新游戏</string>
+
+    <string name="popup_message_win">你赢了！</string>
+    <string name="popup_message_game_over">游戏结束！</string>
+    <string name="popup_try_again">再试一次</string>
+
 </resources>

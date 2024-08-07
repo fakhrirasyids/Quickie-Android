@@ -1,4 +1,4 @@
-package com.fakhrirasyids.quickie.platform.ui.screens.home.components
+package com.fakhrirasyids.quickie.platform.ui.screens.home.widget
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image

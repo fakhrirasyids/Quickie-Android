@@ -15,4 +15,18 @@
     <string name="settings_dialog_cancel">キャンセル</string>
     <string name="settings_language_title">言語</string>
 
+    <!-- GAME -->
+
+    <!-- 2048 Game-->
+    <string name="app_name_short">2048</string>
+
+    <string name="header_score">スコア</string>
+    <string name="header_best">ベスト</string>
+
+    <string name="sub_header_new_game">新しいゲーム</string>
+
+    <string name="popup_message_win">クリア！</string>
+    <string name="popup_message_game_over">ゲームオーバー</string>
+    <string name="popup_try_again">再挑戦</string>
+
 </resources>

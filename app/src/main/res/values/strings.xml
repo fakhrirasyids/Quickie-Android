@@ -1,0 +1,5 @@
+<resources>
+    <string name="title_quickie_2048">2048</string>
+    <string name="title_activity_quickie2048">Quickie2048Activity</string>
+    <string name="title_quickie2048">Quickie 2048</string>
+</resources>

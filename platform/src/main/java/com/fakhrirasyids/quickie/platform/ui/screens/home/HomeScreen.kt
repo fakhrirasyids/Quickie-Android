@@ -37,7 +37,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.fakhrirasyids.quickie.platform.ui.components.Marquee
-import com.fakhrirasyids.quickie.platform.ui.screens.home.components.SettingsDialog
+import com.fakhrirasyids.quickie.platform.ui.screens.home.widget.SettingsDialog
 import com.fakhrirasyids.quickie.ui.theme.Blue
 import com.fakhrirasyids.quickie.ui.theme.LightBLue
 import org.koin.androidx.compose.koinViewModel
@@ -45,7 +45,7 @@ import org.koin.androidx.compose.koinViewModel
 @Composable
 fun HomeScreen(
     modifier: Modifier = Modifier,
-    homeViewModel: HomeViewModel = koinViewModel()
+    homeViewModel: HomeViewModel = koinViewModel(),
 ) {
     val openSettingsDialog = remember {
         mutableStateOf(false)
@@ -59,7 +59,7 @@ fun HomeScreen(
                 HomeContent(
                     modifier = modifier,
                     homeViewModel = homeViewModel,
-                    openSettingsDialog = openSettingsDialog
+                    openSettingsDialog = openSettingsDialog,
                 )
             }
         }
@@ -70,7 +70,7 @@ fun HomeScreen(
 fun HomeContent(
     modifier: Modifier,
     homeViewModel: HomeViewModel,
-    openSettingsDialog: MutableState<Boolean>
+    openSettingsDialog: MutableState<Boolean>,
 ) {
     Column(
         modifier = modifier
@@ -92,7 +92,7 @@ fun HomeContent(
 @Composable
 fun TopHomeBar(
     modifier: Modifier,
-    openSettingsDialog: MutableState<Boolean>
+    openSettingsDialog: MutableState<Boolean>,
 ) {
     Box(modifier = modifier) {
         Column {
@@ -192,7 +192,9 @@ fun TopHomeBar(
         }
 
         Card(
-            onClick = {},
+            onClick = {
+
+            },
             modifier = modifier
                 .wrapContentSize(unbounded = true)
                 .padding(14.dp),
@@ -206,7 +208,7 @@ fun TopHomeBar(
                 modifier = modifier
                     .size(64.dp)
                     .padding(8.dp),
-                painter = painterResource(id = com.fakhrirasyids.quickie.baseResource.R.drawable.quickie_logo_transparent),
+                painter = painterResource(id = com.fakhrirasyids.quickie.baseResource.R.drawable.ic_quickie),
                 tint = Color.Unspecified,
                 contentDescription = stringResource(id = com.fakhrirasyids.quickie.baseResource.R.string.app_name)
             )

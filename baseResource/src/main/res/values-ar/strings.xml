@@ -15,4 +15,17 @@
     <string name="settings_dialog_cancel">إلغاء</string>
     <string name="settings_language_title">اللغة</string>
 
+    <!-- GAME -->
+
+    <!-- 2048 Game-->
+    <string name="app_name_short">2048</string>
+
+    <string name="header_score">النتيجة</string>
+    <string name="header_best">الأفضل</string>
+
+    <string name="sub_header_new_game">لعبة جديدة</string>
+
+    <string name="popup_message_win">لقد فزت!</string>
+    <string name="popup_message_game_over">انتهت اللعبة!</string>
+    <string name="popup_try_again">حاول مرة أخرى</string>
 </resources>
