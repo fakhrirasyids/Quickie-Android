@@ -12,7 +12,8 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.fakhrirasyids.quickie"
+        applicationId = "c" +
+                "om.fakhrirasyids.quickie"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -26,7 +27,7 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = true
+            isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "../shared_proguard-rules.pro"
